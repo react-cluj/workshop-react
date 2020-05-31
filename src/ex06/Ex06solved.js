@@ -7,5 +7,3 @@ export default function Ex06solved() {
         </>
     );
 }
-
-/*solution can be found at */

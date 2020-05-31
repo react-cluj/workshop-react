@@ -7,5 +7,3 @@ export default function Ex02solved() {
         </>
     );
 }
-
-/*solution can be found at */

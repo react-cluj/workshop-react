@@ -8,5 +8,3 @@ export default function Ex01solved() {
         </div>
     );
 }
-
-/*solution can be found at */
