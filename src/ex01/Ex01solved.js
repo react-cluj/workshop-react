@@ -15,7 +15,6 @@ export default function Ex01solved() {
     );
 }
 
-
 function CustomButton (props) {
     return (
         <button style={{background: 'lightblue', cursor: 'pointer'}}
