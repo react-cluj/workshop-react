@@ -1,26 +1,137 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
+
+import Ex01 from './ex01/Ex01';
+// import Ex02 from './ex02/Ex02';
+// import Ex03 from './ex03/Ex03';
+// import Ex04 from './ex04/Ex04';
+// import Ex05 from './ex05/Ex05';
+// import Ex06 from './ex06/Ex06';
+// import Ex07 from './ex07/Ex07';
+// import Ex01solved from './ex01/Ex01solved';
+// import Ex02solved from './ex02/Ex02solved';
+// import Ex03solved from './ex03/Ex03solved';
+// import Ex04solved from './ex04/Ex04solved';
+// import Ex05solved from './ex05/Ex05solved';
+// import Ex06solved from './ex06/Ex06solved';
+// import Ex07solved from './ex07/Ex07solved';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <Router>
+            <div className="App-header">
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/ex01">Ex01</Link>
+                    </li>
+                    {/*<li>*/}
+                    {/*    <Link to="/ex01solved">Ex01solved</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex02">Ex02</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex02solved">Ex02solved</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex03">Ex03</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex03solved">Ex03solved</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex04">Ex04</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex04solved">Ex04solved</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex05">Ex05</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex05solved">Ex05solved</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex06">Ex06</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex06solved">Ex06solved</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex07">Ex07</Link>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*    <Link to="/ex07solved">Ex07solved</Link>*/}
+                    {/*</li>*/}
+                </ul>
+
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/ex01">
+                        <Ex01 />
+                    </Route>
+                    {/*<Route path="/ex01solved">*/}
+                    {/*    <Ex01solved />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex02">*/}
+                    {/*    <Ex02 />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex02solved">*/}
+                    {/*    <Ex02solved />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex03">*/}
+                    {/*    <Ex03 />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex03solved">*/}
+                    {/*    <Ex03solved />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex04">*/}
+                    {/*    <Ex04 />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex04solved">*/}
+                    {/*    <Ex04solved />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex05">*/}
+                    {/*    <Ex05 />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex05solved">*/}
+                    {/*    <Ex05solved />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex06">*/}
+                    {/*    <Ex06 />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex06solved">*/}
+                    {/*    <Ex06solved />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex07">*/}
+                    {/*    <Ex07 />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/ex07solved">*/}
+                    {/*    <Ex07solved />*/}
+                    {/*</Route>*/}
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
+
+function Home() {
+    return (
+        <div className="App">
+        </div>
+    );
+}
