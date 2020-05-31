@@ -13,7 +13,6 @@ export default function Ex03() {
         <>
             <h2>Ex03</h2>
             <ul id='names'>
-
             </ul>
         </>
     );

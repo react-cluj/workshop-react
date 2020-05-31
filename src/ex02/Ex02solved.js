@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function Ex02solved() {
 
     const [color, setColor] = useState('white');
