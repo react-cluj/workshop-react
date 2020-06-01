@@ -13,14 +13,13 @@ import Ex03 from './ex03/Ex03';
 import Ex04 from './ex04/Ex04';
 import Ex05 from './ex05/Ex05';
 // import Ex06 from './ex06/Ex06';
-// import Ex07 from './ex07/Ex07';
+
 import Ex01solved from './ex01/Ex01solved';
 import Ex02solved from './ex02/Ex02solved';
 import Ex03solved from './ex03/Ex03solved';
 import Ex04solved from './ex04/Ex04solved';
 // import Ex05solved from './ex05/Ex05solved';
 // import Ex06solved from './ex06/Ex06solved';
-// import Ex07solved from './ex07/Ex07solved';
 
 function App() {
 
@@ -67,12 +66,6 @@ function App() {
                     {/*<li>*/}
                     {/*    <Link to="/ex06solved">Ex06solved</Link>*/}
                     {/*</li>*/}
-                    {/*<li>*/}
-                    {/*    <Link to="/ex07">Ex07</Link>*/}
-                    {/*</li>*/}
-                    {/*<li>*/}
-                    {/*    <Link to="/ex07solved">Ex07solved</Link>*/}
-                    {/*</li>*/}
                 </ul>
 
                 <Switch>
@@ -114,12 +107,6 @@ function App() {
                     {/*</Route>*/}
                     {/*<Route path="/ex06solved">*/}
                     {/*    <Ex06solved />*/}
-                    {/*</Route>*/}
-                    {/*<Route path="/ex07">*/}
-                    {/*    <Ex07 />*/}
-                    {/*</Route>*/}
-                    {/*<Route path="/ex07solved">*/}
-                    {/*    <Ex07solved />*/}
                     {/*</Route>*/}
                 </Switch>
             </div>
