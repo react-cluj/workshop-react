@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from 'react';
+import CurrentUserContext from './CurrentUserContext';
 
 export default function Ex05solved() {
+    let currentUser = useContext(CurrentUserContext);
+
     return (
         <>
-            <h2>Ex05solved</h2>
+            <span>{currentUser.email}</span>
+            <span>{currentUser.phone}</span>
         </>
-    );
+    )
 }
