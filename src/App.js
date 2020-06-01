@@ -11,13 +11,13 @@ import Ex01 from './ex01/Ex01';
 import Ex02 from './ex02/Ex02';
 import Ex03 from './ex03/Ex03';
 import Ex04 from './ex04/Ex04';
-// import Ex05 from './ex05/Ex05';
+import Ex05 from './ex05/Ex05';
 // import Ex06 from './ex06/Ex06';
 // import Ex07 from './ex07/Ex07';
 import Ex01solved from './ex01/Ex01solved';
 import Ex02solved from './ex02/Ex02solved';
 import Ex03solved from './ex03/Ex03solved';
-// import Ex04solved from './ex04/Ex04solved';
+import Ex04solved from './ex04/Ex04solved';
 // import Ex05solved from './ex05/Ex05solved';
 // import Ex06solved from './ex06/Ex06solved';
 // import Ex07solved from './ex07/Ex07solved';
@@ -52,12 +52,12 @@ function App() {
                     <li>
                         <Link to="/ex04">Ex04</Link>
                     </li>
-                    {/*<li>*/}
-                    {/*    <Link to="/ex04solved">Ex04solved</Link>*/}
-                    {/*</li>*/}
-                    {/*<li>*/}
-                    {/*    <Link to="/ex05">Ex05</Link>*/}
-                    {/*</li>*/}
+                    <li>
+                        <Link to="/ex04solved">Ex04solved</Link>
+                    </li>
+                    <li>
+                        <Link to="/ex05">Ex05</Link>
+                    </li>
                     {/*<li>*/}
                     {/*    <Link to="/ex05solved">Ex05solved</Link>*/}
                     {/*</li>*/}
@@ -100,12 +100,12 @@ function App() {
                     <Route path="/ex04">
                         <Ex04 />
                     </Route>
-                    {/*<Route path="/ex04solved">*/}
-                    {/*    <Ex04solved />*/}
-                    {/*</Route>*/}
-                    {/*<Route path="/ex05">*/}
-                    {/*    <Ex05 />*/}
-                    {/*</Route>*/}
+                    <Route path="/ex04solved">
+                        <Ex04solved />
+                    </Route>
+                    <Route path="/ex05">
+                        <Ex05 />
+                    </Route>
                     {/*<Route path="/ex05solved">*/}
                     {/*    <Ex05solved />*/}
                     {/*</Route>*/}
