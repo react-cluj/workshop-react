@@ -96,6 +96,12 @@ function App() {
                     <Route path="/ex04solved">
                         <Ex04solved />
                     </Route>
+                    <Route path="/ex06">
+                        <Ex06 />
+                    </Route>
+                    <Route path="/ex06solved">
+                        <Ex06solved />
+                    </Route>
                     <CurrentUserContext.Provider value={{
                         email: 'john_doe@gmail.com',
                         phone: '+4071234567'
@@ -107,12 +113,7 @@ function App() {
                             <Ex05solved />
                         </Route>
                     </CurrentUserContext.Provider>
-                    <Route path="/ex06">
-                        <Ex06 />
-                    </Route>
-                    <Route path="/ex06solved">
-                        <Ex06solved />
-                    </Route>
+
                 </Switch>
             </div>
         </Router>
