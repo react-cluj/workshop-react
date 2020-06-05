@@ -9,15 +9,14 @@ export default function Ex01solved() {
     return (
         <div>
             <h2>Ex01 solved</h2>
-            <CustomButton onclick={callMe}>
-            </CustomButton>
+            <CustomButton onclick={callMe}/>
         </div>
     );
 }
 
 function CustomButton (props) {
     return (
-        <button style={{background: 'lightblue', cursor: 'pointer'}}
+        <button style={{backgroundColor: 'lightblue', cursor: 'pointer'}}
                 onClick={props.onclick}>
             Click me
         </button>
