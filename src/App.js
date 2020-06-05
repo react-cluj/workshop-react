@@ -12,6 +12,7 @@ import Ex02 from './ex02/Ex02';
 import Ex03 from './ex03/Ex03';
 import Ex04 from './ex04/Ex04';
 import Ex05 from './ex05/Ex05';
+import CurrentUserContext from './ex05/CurrentUserContext';
 // import Ex06 from './ex06/Ex06';
 
 import Ex01solved from './ex01/Ex01solved';
@@ -96,9 +97,14 @@ function App() {
                     <Route path="/ex04solved">
                         <Ex04solved />
                     </Route>
-                    <Route path="/ex05">
-                        <Ex05 />
-                    </Route>
+                    <CurrentUserContext.Provider value={{
+                        email: 'john_doe@gmail.com',
+                        phone: '+4071234567'
+                    }}>
+                        <Route path="/ex05">
+                            <Ex05 />
+                        </Route>
+                    </CurrentUserContext.Provider>
                     {/*<Route path="/ex05solved">*/}
                     {/*    <Ex05solved />*/}
                     {/*</Route>*/}

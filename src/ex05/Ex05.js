@@ -6,7 +6,9 @@ export default function Ex05() {
         without having to pass un-needed props throughout the component "chain".
         This can be useful for various things like themes, intl, or even a user profile.
 
-        We created a new context in CurrentUserContext. Using the useContext hook,
+        You'll find a new empty obj context in CurrentUserContext.
+        We added some user data in App.js (notice the Context.Provider wrapping Ex05)
+        Using the useContext hook,
         let's consume the data here and display the user email and phone
      */
     return (
